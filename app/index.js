@@ -69,12 +69,17 @@ export default function Index() {
           }
         </View>
       )}
-      <Text>Sexta feira</Text>
 
       <Link href="/firebase.js" asChhild>
         <Pressable>
-          <Text> TI </Text>
+          <Text> Notificações </Text>
         </Pressable>
+
+      </Link>
+
+
+      <Link href=" /notification" asChhild style={{ backgroundColor: "#FF3737", padding: 15, borderRadius: 10, width: '95%', marginBottom: 10 }}  >
+        <Text style={{ fontSize: 22, color: "#FFFFFF", textAlign: "center" }}></Text>
 
       </Link>
 
@@ -87,8 +92,7 @@ export default function Index() {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
-      >
+        onRequestClose={() => setModalVisible(false)}>
 
 
         <View style={styles.modalContainer}>
@@ -136,8 +140,8 @@ export default function Index() {
         </View>
 
       </Modal>
-
     </View>
+
 
 
   );
