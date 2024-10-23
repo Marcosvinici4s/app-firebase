@@ -15,7 +15,15 @@
     "ios": {
       "supportsTablet": true
     },
+    "infoPlist": {
+      "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa de permissão para notificações."
+    },                            
     "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "NOTIFICATIONS"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
